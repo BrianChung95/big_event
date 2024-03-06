@@ -20,6 +20,7 @@ public class JwtTest {
                 .withClaim("user", claims)
                 .withExpiresAt(new Date(System.currentTimeMillis() + 100 * 60 * 60 * 12))
                 .sign(Algorithm.HMAC256("fdsklfjsadlkjalsdkfj"));
+
         System.out.println(token);
     }
 
